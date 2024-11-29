@@ -10,7 +10,10 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "deploy:staging": "docker-compose -f docker-compose.staging.yml up -d",
-    "deploy:production": "docker-compose -f docker-compose.production.yml up -d"
+    "deploy:production": "docker-compose -f docker-compose.production.yml up -d",
+    "dev:docker": "docker-compose -f docker-compose.local.yml up",
+    "dev:docker:build": "docker-compose -f docker-compose.local.yml up --build",
+    "dev:docker:down": "docker-compose -f docker-compose.local.yml down"
   },
   "dependencies": {
     "axios": "^1.6.7",
